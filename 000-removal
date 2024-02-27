@@ -1,0 +1,7 @@
+source config.sh
+
+echo Removing...
+for i in {1..360};do rm "/home/$(whoami)/Área de Trabalho/urnext$i.desktop";done
+rm "/home/$(whoami)/Área de Trabalho/OPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENMEOPENME"
+echo
+echo -e "Change Wallpaper (:"
